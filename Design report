@@ -1,7 +1,7 @@
-                                                                                                                        Introduction
+                                                                                               Introduction
 For this milestone I am building a rest api for my store front application. I based the application on the design I made in the previous milestone with slight adjustments but it overall follows the logic.
 
-                                                                                                                        Requirements
+                                                                                               Requirements
 
 The minimum function my rest api must be able to achive is to support the basic Crud Operations:
 
@@ -10,4 +10,34 @@ Read
 Update
 Delete
 
-and to also test the api in post man.
+and to also test the api in post man. 
+
+The rough draft of my previous design, specially the logic I planned to implement is as follows:
+
+
+                                                                                                 Product API
+
+One of the requirements this week was to introduce the API concept for my application. I am making a simple Product API, the following is a draft of the concept;
+HTTP Verbs – the requirements are that a product needs to be created, updated, listed, and deleted. The HTTP verbs that are associated and that I will be using are,
+• POST – Create 
+• PATCH – Update
+• GET – List
+• DELETE – Delete 
+Examples code of Product API:
+"actions" : {
+"get" : {
+ "method" : "GET",
+ "href" : "http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/products/47738"
+},
+"update" : {
+ "method" : "PATCH",
+ "href" : "http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/products/47738"
+},
+"delete" : {
+ "method" : "DELETE",
+ "href" : "http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/products/47738"
+}
+
+
+As shown above, my current api follows the logic presented in my previous rough draft albiet with slight changes. Firstly, rather than PATCH for the update operation, I used PUT instead. Also, the gateway
+to localhost I used was 3000 rather than 8080. However aside from those changes I followed through with my planning. 
