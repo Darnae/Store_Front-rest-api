@@ -1,0 +1,13 @@
+                                                                                                                        Introduction
+For this milestone I am building a rest api for my store front application. I based the application on the design I made in the previous milestone with slight adjustments but it overall follows the logic.
+
+                                                                                                                        Requirements
+
+The minimum function my rest api must be able to achive is to support the basic Crud Operations:
+
+Create
+Read
+Update
+Delete
+
+and to also test the api in post man.
